@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height width border and background</title>
+    <style>
+        #firstp{
+            background-color: aqua;
+            height: 100px;
+            width: 450px;
+            /* here this is the way to specify all the three properties in a single line */
+            border: 4px solid red;
+            /* border-width:4px;
+            border: 2px solid red;
+            /* border-color: yellowgreen;
+            border-style: solid; */
+            border-radius:20px; 
+
+        }
+        #secondp{
+            background-color: rgb(195, 255, 0);
+            height: 100px;
+            width: 450px;
+            /* used to change border individually side */
+            border-top:4px solid violet;
+            border-bottom:4px solid green;
+            border-right:4px solid blue;
+            border-left:4px solid orangered;
+            /* used to change the border radius at different corner differently */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 50px
+        }
+        #thirdp{
+            height: 600px;
+            width:800px;
+            background-image: url('https://images.pexels.com/photos/12570617/pexels-photo-12570617.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+            border:4px solid red;
+            /* used for repeat image in x and y direction(horizontal and vertical) n times */
+            /* background-repeat: repeat-x; 
+            background-repeat: repeat-y; */
+            /* this is used for no repeat  */
+            background-repeat:no-repeat;
+            /* this is used for specify the position of image  */
+            /* background-position:12px 15px; */
+            /* also there are too many combination to defining the position of background image like center top,top top,center right,center left, bottom right, bottom left, etc */
+            background-position:center center;
+        }
+    </style>
+</head>
+<body>
+    <h2>this is first heading</h2>
+    <p id="firstp">this is first paragraph</p>
+
+    <h2>this is second heading</h2>
+    <p id="secondp">this is second paragraph</p>
+
+    <h2>this is third heading</h2>
+    <p id="thirdp">this is third paragraph</p>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and list</title>
+</head>
+<body>
+    <!-- <ul></ul> is used to include unordered list -->
+    <!-- then we use <li></li> to include ordered list -->
+    <!-- <ol></ol> is used to include ordered list -->
+    <ul type="square">
+        <li>this is first item of unordered list</li>
+        <li>this is second item of unordered list</li>
+        <li>this is third item of unordered list</li>
+    </ul>
+    <!-- type attribute is used to insert the type of the ordered list -->
+    <ol type="A">
+        <li>this is first item of unordered list</li>
+        <li>this is second item of unordered list</li>
+        <li>this is third item of unordered list</li>
+    </ol>
+    <!--  concept of nested list-->
+    <ul type="circle">
+        <li>this is first item of unordered list</li>
+        <ol>
+            <li>this is nested list</li>
+            <ul>
+                <li>this is also a nested list</li>
+            </ul>
+        </ol>
+        <li>this is second item of unordered list</li>
+        <li>this is third item of unordered list</li>
+    </ul>
+
+    <!-- inserting table -->
+    <!-- table tag is used to start the table -->
+    <!-- <thead></thead> tag is used to insert the table head -->
+    <!-- <tr></tr> tag is used to insert the table row -->
+    <!-- <th></th>  tag is used to insert the table head data-->
+    <!-- <tbody></tbody> tag is used to insert the rest of the part of the table -->
+    <!-- <td></td>  tag is used to insert the table data in tbody tag-->
+    <table>
+        <thead>
+<tr>
+    <th>name</th>
+    <th>employee id</th>
+    <th>employee role</th>
+
+</tr>
+        </thead>
+        <tbody>
+<tr>
+   <td>shivshankar</td>
+   <td>632745</td>
+   <td>programmer</td>
+</tr>
+
+<tr>
+    <td>shivam</td>
+    <td>632775</td>
+    <td>developer</td>
+</tr>
+
+<tr>
+    <td>anubhav</td>
+    <td>632765</td>
+    <td>sde intern</td>
+</tr>
+        </tbody>
+    </table>
+</body>
+</html>

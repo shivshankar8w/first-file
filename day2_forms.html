@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h2>forms</h2>
+    <!-- <form action=""></form> this tag is used to insert the form and in action part we store the data taken from the user -->
+    <form action="backend.php">
+        <!-- <div></div> it's work is same as br tag but it is block elements-->
+        <!-- <label for=""></label> tag is used to input the data while clicking on the name of that-->
+        <label for="name">Name</label>
+        <div>
+            <!-- this is used to input text -->
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myroll">
+        </div>
+        <br>
+        <div>
+            <!-- used to input email -->
+            email: <input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            <!-- used to input date  -->
+            <input type="date" name="mydate" >
+        </div>
+        <br>
+        <div>
+            <!-- used to input numerical data -->
+            Bonus: <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            <!-- used to input checkbox -->
+            Are you Eligible:<input type="checkbox" name="myeligibility" >
+        </div>
+        <br>
+        <div>
+            <!-- used to input checkbox to select only one box -->
+            Gender: Male<input type="radio" name="mygender" >Female<input type="radio" name="mygender">Other<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+         Write about yourself <br>
+         <!-- used to input a workspace -->
+         <textarea name="mytext"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- used to input a list of options to select -->
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+               <option value="tata">tata safari</option>
+               <option value="XUV" selected>XUV 700</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- used to submit data by using above form -->
+          <input type="submit" value="submitnow">
+          <br>
+          <!-- used to reset the data filled to fill again -->
+          <input type="reset" value="resetnow">
+        </div>
+    </form>
+</body>
+</html>

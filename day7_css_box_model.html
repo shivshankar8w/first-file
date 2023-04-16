@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(14, 41, 72);
+        }
+        /* 
+        margin means property works outside the container
+        padding means property works inside the container */
+      .container{
+        background-color: rgb(215, 250, 246);
+        border: 4px solid rgb(157, 0, 255);
+        padding: 70px;
+        /* in padding we can set padding top bot tom left and right individually */
+        /* same for margin and padding just change the word margin from padding for margin */
+        /* padding-top: 60px;
+        padding-bottom: 80px;
+        padding-left: 40px; 
+        padding-rught:50px; */
+
+        /* shortcut for all four padding
+        padding : 25px 50px 30px 60px;  it refer to padding/margin top right bottom left;
+        */
+        /* if we wanna to give the same padding to top and bottom and same padding to left and right we can erite like this */
+        /* padding:y(top/bottom) x(left/right); */
+        /* padding:35px 50px; */
+        /* note: here we have assign the value of (top/bottom) to y and (left/right) to x */
+        
+        /* margin: 30px; */
+        margin: 50px 45px;
+        border-radius: 50px;
+        width:500px;
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my first heading</h3>
+        <p id="firstp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque exercitationem doloribus fugiat illo et molestias quis cum repudiandae obcaecati ratione! Itaque quis nam eveniet quisquam!</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my second heading</h3>
+        <p id="secondp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque exercitationem doloribus fugiat
+            illo et molestias quis cum repudiandae obcaecati ratione! Itaque quis nam eveniet quisquam!</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my third heading</h3>
+        <p id="thirdp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque exercitationem doloribus fugiat
+            illo et molestias quis cum repudiandae obcaecati ratione! Itaque quis nam eveniet quisquam!</p>
+    </div>
+
+
+</body>
+</html>
